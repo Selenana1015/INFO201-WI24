@@ -12,9 +12,6 @@ colnames(national_park_name)
 head(national_ana)
 colnames(national_ana)
 
-merged_data <- inner_join(national_park_name, national_ana, by = "parks")
-merged_data <- inner_join(national_park_name, national_ana, by = c("national_park_name" = "national_ana"))
-
 colnames(national_park_name)[colnames(national_park_name) == "Acadia"] <- "title"
 View(national_park_name)
 
